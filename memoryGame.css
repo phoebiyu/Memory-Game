@@ -1,0 +1,169 @@
+/*reset page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+/*set overall background*/
+html {
+  background-color: salmon;
+}
+
+/*set header container*/
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: slategrey;
+  width: 100%;
+  z-index: 1;
+}
+
+/* set logo element*/
+a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2em;
+  cursor: pointer;
+  background-color: turquoise;
+  color: white;
+  padding: 5px;
+}
+
+/* nav bar container */
+.navBar {
+  display: flex;
+  width: 80%;
+  height: auto;
+}
+
+/* nav bar list elements*/
+.navList {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+#currentPage {
+  color: coral;
+  height: 100%;
+  font-weight: bold;
+}
+
+.navItem {
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+/*hamberger bar*/
+.dropDownMenu {
+  background-color: turquoise;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.line {
+  background-color: white;
+  font-size: 3px;
+  margin: 6px 5px;
+  padding: 1px 20px;
+}
+
+/*main page setup*/
+main {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 51px;
+  align-items: center;
+}
+
+/*Page Specific Setup*/
+.memoryGameContainer,
+.gameRules {
+  background-color: rgb(129, 160, 189);
+  opacity: 0.8;
+  height: max-content;
+  width: 18rem;
+  height: 615px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+p {
+  text-align: center;
+}
+.gameStatus {
+  margin: 15px;
+  font-size: 1.5em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.3em;
+  padding: 15px 30px;
+  margin: 15px;
+  border-radius: 2em;
+  background-color: turquoise;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.memoryGameGrid {
+  height: 615px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  background-color: white;
+  opacity: 0.6;
+  height: 90%;
+  width: 90%;
+}
+
+td {
+  margin: 2px;
+  border: 1px red solid;
+  cursor: pointer;
+}
+
+.memoryGameGrid div {
+  background-color: turquoise;
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+#readyStart {
+  display: none;
+  position: fixed;
+  text-align: center;
+  font-size: 7em;
+}
